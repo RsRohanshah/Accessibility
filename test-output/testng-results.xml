@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-04T14:23:47 IST" name="Default suite" finished-at="2023-01-04T14:24:03 IST" duration-ms="15982">
+    <groups>
+    </groups>
+    <test started-at="2023-01-04T14:23:47 IST" name="Default test" finished-at="2023-01-04T14:24:03 IST" duration-ms="15982">
+      <class name="testClass.Test_LawSuits">
+        <test-method is-config="true" signature="openOnce()[pri:0, instance:testClass.Test_LawSuits@7f0eb4b4]" started-at="2023-01-04T14:23:47 IST" name="openOnce" finished-at="2023-01-04T14:24:00 IST" duration-ms="12606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openOnce -->
+        <test-method is-config="true" signature="extentreport()[pri:0, instance:testClass.Test_LawSuits@7f0eb4b4]" started-at="2023-01-04T14:24:00 IST" name="extentreport" finished-at="2023-01-04T14:24:00 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentreport -->
+        <test-method signature="getData()[pri:0, instance:testClass.Test_LawSuits@7f0eb4b4]" started-at="2023-01-04T14:24:00 IST" name="getData" finished-at="2023-01-04T14:24:01 IST" duration-ms="1297" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Plaintiff Name: LAMAR BROWN Filing date: November 30, 2022 State of filing: New York Defendant Name: Bella Vita,] but found [Plaintiff Name: LAMAR BROWN Filing date: November 30, 2022 State of filing: New York Defendant Name: Bella Vita,...]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Plaintiff Name: LAMAR BROWN Filing date: November 30, 2022 State of filing: New York Defendant Name: Bella Vita,] but found [Plaintiff Name: LAMAR BROWN Filing date: November 30, 2022 State of filing: New York Defendant Name: Bella Vita,...]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testClass.Test_LawSuits.getData(Test_LawSuits.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method is-config="true" signature="cap(org.testng.ITestResult)[pri:0, instance:testClass.Test_LawSuits@7f0eb4b4]" started-at="2023-01-04T14:24:01 IST" name="cap" finished-at="2023-01-04T14:24:02 IST" duration-ms="955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getData status=FAILURE method=Test_LawSuits.getData()[pri:0, instance:testClass.Test_LawSuits@7f0eb4b4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cap -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testClass.Test_LawSuits@7f0eb4b4]" started-at="2023-01-04T14:24:02 IST" name="close" finished-at="2023-01-04T14:24:03 IST" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testClass.Test_LawSuits -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
